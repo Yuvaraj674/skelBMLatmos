@@ -72,6 +72,8 @@ library(skelBMLatmos)
 +   differential_module_names = list()
 + )
 > print(result)
+> result[c("time", "P_tilde", "Pb", "PdR", "PdA", "Pas")]
+
 ```
 For more information about using BioCro modules in R, please see the
 [BioCro framework R package](https://github.com/biocro/biocro).
