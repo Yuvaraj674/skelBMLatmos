@@ -46,12 +46,32 @@ install.packages('skelBMLatmos', repos=NULL, type='SOURCE')
 The following code will print a list of all modules available in this library,
 return information about one of them (`example_module`), and then run that
 module:
+
+To give manual input:
 ```
 library(BioCro)
 library(skelBMLatmos)
 get_all_modules('skelBMLatmos')
 module_info('skelBMLatmos:example_module')
-evaluate_module('skelBMLatmos:example_module', list(A = 1, B = 2))
+evaluate_module('skelBMLatmos:example_module',list(To=300.0,Tr=0.8,Ta=0.9,Ion=1000.0,h=0.5,Po=101325.0,BA=0.05,nu=0.3,Ps=0.2))
+```
+
+To use inputs.csv file
+```
+library(skelBMLatmos)
+> library(BioCro)
+> input_df <- read.csv("inputs.csv")
+> if (!"time" %in% names(input_df)) {
++   stop("Input file must contain a 'time' column.")
++ }
+> result <- run_biocro(
++   initial_values = list(),
++ parameters = list(timestep = 1),
++ drivers = input_df,
++   direct_module_names = list("skelBMLatmos:example_module"),
++   differential_module_names = list()
++ )
+> print(result)
 ```
 For more information about using BioCro modules in R, please see the
 [BioCro framework R package](https://github.com/biocro/biocro).
