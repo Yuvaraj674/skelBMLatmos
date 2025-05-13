@@ -90,11 +90,11 @@ library(skelBMLatmos)
 
 Output Name	Full 
 | Output Name  | Full Name                                                                                                                                                                                             
-| **P\_tilde** | *Modified Transmitted Radiation*                    
-| **Pb**       | *Direct Beam Radiation Component*                     
-| **PdR**      | *Diffuse Radiation from Reflection*                  
-| **PdA**      | *Diffuse Radiation from Absorption*                  
-| **Pas**      | *Available Photosynthetically Active Radiation (PAR)* 
+| P\_tilde   |  Modified Transmitted Radiation                    
+| Pb         |  Direct Beam Radiation Component                     
+| PdR        |  Diffuse Radiation from Reflection                  
+| PdA        |  Diffuse Radiation from Absorption                  
+| Pas        |  Available Photosynthetically Active Radiation (PAR) 
 
 
 ```
