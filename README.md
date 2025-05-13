@@ -54,6 +54,20 @@ library(skelBMLatmos)
 get_all_modules('skelBMLatmos')
 module_info('skelBMLatmos:example_module')
 evaluate_module('skelBMLatmos:example_module',list(To=300.0,Tr=0.8,Ta=0.9,Ion=1000.0,h=0.5,Po=101325.0,BA=0.05,nu=0.3,Ps=0.2))
+
+
+| Input | Meaning (based on naming)        | Notes                            |
+| ----- | -------------------------------  | -------------------------------- |
+| `To`  | Some initial temperature (?)     | Kelvin or arbitrary              |
+| `Tr`  | Transmission ratio               | Range: 0–1                       |
+| `Ta`  | Atmospheric transmission         | Range: 0–1                       |
+| `Ion` | Incoming solar radiation         | W/m²                             |
+| `h`   | Solar elevation angle (radians)  | Between 0 and π/2 (approx 28.6°) |
+| `Po`  | Some pressure value (?)          | Pascals                          |
+| `BA`  | Some coefficient                 | Dimensionless                    |
+| `nu`  | Scaling coefficient              | Dimensionless                    |
+| `Ps`  | Reflection/feedback parameter    | Dimensionless                    |
+
 ```
 
 To use inputs.csv file
