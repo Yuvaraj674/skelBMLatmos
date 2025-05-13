@@ -88,6 +88,15 @@ library(skelBMLatmos)
 > print(result)
 > result[c("time", "P_tilde", "Pb", "PdR", "PdA", "Pas")]
 
+Output Name	Full 
+| Output Name  | Full Name                                                                                                                                                                                             
+| **P\_tilde** | *Modified Transmitted Radiation*                    
+| **Pb**       | *Direct Beam Radiation Component*                     
+| **PdR**      | *Diffuse Radiation from Reflection*                  
+| **PdA**      | *Diffuse Radiation from Absorption*                  
+| **Pas**      | *Available Photosynthetically Active Radiation (PAR)* 
+
+
 ```
 For more information about using BioCro modules in R, please see the
 [BioCro framework R package](https://github.com/biocro/biocro).
